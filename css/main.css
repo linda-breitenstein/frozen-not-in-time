@@ -1,0 +1,9 @@
+html {
+  font-family: "Fredoka One", cursive;
+
+}
+
+div {
+  /* Warning stripes */
+  background-image: repeating-linear-gradient(45deg, yellow, yellow 10%, black 10%, black 20%);
+}
