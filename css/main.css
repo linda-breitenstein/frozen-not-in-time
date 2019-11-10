@@ -1,13 +1,9 @@
 .content {
   background-image: repeating-linear-gradient(-30deg, #c9fcff, #d4fdff 2%);
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", sans-serif;
   border-bottom: 8px solid #b3fbff;
   border-top: 8px solid #b3fbff;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
-}
-
-.banner-content {
-  text-shadow:
 }
 
 h1 {
@@ -16,7 +12,7 @@ h1 {
   animation: swing .2s 1.3s ease-in forwards;
   opacity: 0;
   filter: blur(13px);
-  transform: rotate(-12deg);
+  transform: rotate(-10deg);
   transform-origin: left center;
   left: -.14em;
 }
@@ -27,13 +23,13 @@ p {
   opacity: 0;
   animation: swing .2s 1.3s ease-in forwards;
   filter: blur(13px);
-  transform: rotate(-8deg);
+  transform: rotate(-7deg);
   transform-origin: left center;
   left: -.14em;
   max-width: 19em;
 }
 
-btn-ghost {
+.btn-ghost {
   color: #c09;
   border: 3px solid #990073;
   border-radius: 6px;
@@ -43,10 +39,9 @@ btn-ghost {
   transform-origin: left center;
   left: -.14em;
   position: relative;
-
 }
 
-btn-ghost:hover {
+.btn-ghost:hover {
   color: #c09;
   background-color: #b3fbff;
   border: 3px solid #990073;
@@ -72,9 +67,9 @@ btn-ghost:hover {
 
 .layer {
   height: 190px;
-  width: 190px;
-  left: 100%
-  bottom: 100%
+  width: 180px;
+  left: 30%;
+  bottom: 100%;
   transform: translateX(-50%);
 }
 
@@ -87,7 +82,7 @@ btn-ghost:hover {
 }
 
 .chocolate {
-  animation: chocolate-layer .60s linear 1 forwards;
+  animation: chocolate-layer .75s linear 1 forwards;
   z-index: 1;
 }
 
@@ -99,7 +94,6 @@ btn-ghost:hover {
 .cherry {
   animation: cherry-layer 1.3s linear 1 forwards;
   z-index: 999;
-
 }
 
 @keyframes cherry-layer {
@@ -109,7 +103,7 @@ btn-ghost:hover {
   }
 
   100% {
-    bottom: 360px;
+    bottom: 350px;
   }
 
 }
@@ -117,11 +111,11 @@ btn-ghost:hover {
 @keyframes vanilla-layer {
 
   0% {
-  bottom: 100%;
+    bottom: 100%;
   }
 
   100% {
-  bottom: 270px;
+    bottom: 270px;
   }
 
 }
@@ -141,11 +135,11 @@ btn-ghost:hover {
 @keyframes mint-layer {
 
   0% {
-  bottom: 100%;
+    bottom: 100%;
   }
 
   100% {
-  bottom: 100px;
+    bottom: 100px;
   }
 
 }
@@ -153,11 +147,11 @@ btn-ghost:hover {
 @keyframes cone-layer {
 
   0% {
-  bottom: 100%;
+    bottom: 100%;
   }
 
   100% {
-  bottom: 0;
+    bottom: 0;
   }
 
 }
