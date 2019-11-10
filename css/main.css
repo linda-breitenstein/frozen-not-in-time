@@ -3,6 +3,11 @@
   font-family: "Fredoka One", cursive;
   border-bottom: 8px solid #b3fbff;
   border-top: 8px solid #b3fbff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.banner-content {
+  text-shadow:
 }
 
 h1 {
@@ -47,48 +52,7 @@ btn-ghost:hover {
   border: 3px solid #990073;
 }
 
-.icecream {
-  min-height: 485px;
-
-}
-
-.layer {
-  height: 190px;
-  width: 190px;
-  left: 100%
-  bottom: 100%
-  transform: translateX(-50%);
-}
-
-.cherry {
-  animation: cherry-layer linear 1 forwards;
-  z-index: 999;
-
-}
-
-.chocolate {
-  animation: chocolate-layer linear 1 forwards;
-  z-index: 1;
-}
-
-.cone {
-  animation: cone-layer linear 1 forwards;
-
-}
-
-.mint {
-  animation: mint-layer linear 1 forwards;
-
-}
-
-.vanilla {
-  animation: vanilla-layer linear 1 forwards;
-  z-index: 2;
-
-}
-
-
-@@keyframes swing {
+@keyframes swing {
 
   0% {
     filter: blur(10px);
@@ -102,18 +66,79 @@ btn-ghost:hover {
 
 }
 
-@@keyframes cone-layer {
+.icecream {
+  min-height: 485px;
+}
+
+.layer {
+  height: 190px;
+  width: 190px;
+  left: 100%
+  bottom: 100%
+  transform: translateX(-50%);
+}
+
+.cone {
+  animation: cone-layer .3s linear 1 forwards;
+}
+
+.mint {
+  animation: mint-layer .6s linear 1 forwards;
+}
+
+.chocolate {
+  animation: chocolate-layer .60s linear 1 forwards;
+  z-index: 1;
+}
+
+.vanilla {
+  animation: vanilla-layer 1s linear 1 forwards;
+  z-index: 2;
+}
+
+.cherry {
+  animation: cherry-layer 1.3s linear 1 forwards;
+  z-index: 999;
+
+}
+
+@keyframes cherry-layer {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 360px;
+  }
+
+}
+
+@keyframes vanilla-layer {
 
   0% {
   bottom: 100%;
   }
 
   100% {
-  bottom: 0;
+  bottom: 270px;
   }
 
 }
-@@keyframes mint-layer {
+
+@keyframes chocolate-layer {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 192px;
+  }
+
+}
+
+@keyframes mint-layer {
 
   0% {
   bottom: 100%;
@@ -124,37 +149,15 @@ btn-ghost:hover {
   }
 
 }
-@@keyframes chocolate-layer {
 
-  0% {
-    bottom: 100%;
-  }
-
-  100% {
-    bottom: 150px;
-  }
-
-}
-
-@@keyframes vanilla-layer {
+@keyframes cone-layer {
 
   0% {
   bottom: 100%;
   }
 
   100% {
-  bottom: 200px;
-  }
-
-}
-@@keyframes cherry-layer {
-
-  0% {
-    bottom: 100%;
-  }
-
-  100% {
-    bottom: 250px;
+  bottom: 0;
   }
 
 }
